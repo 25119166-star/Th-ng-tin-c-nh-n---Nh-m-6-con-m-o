@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Cá Nhân</title>
+    <style>
+        /* Thiết lập cơ bản */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        /* Ảnh đại diện và Header */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+        }
+
+        h1 { margin: 10px 0 5px; color: #007bff; }
+        .tagline { font-style: italic; color: #666; }
+
+        /* Các mục nội dung */
+        .section { margin: 20px 0; }
+        h2 { border-left: 5px solid #007bff; padding-left: 10px; font-size: 1.2rem; }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background: #e1ecf4;
+            color: #39739d;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Thông tin liên hệ */
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover { text-decoration: underline; }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .container { margin: 10px; padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="avatar">
+        <h1>Nguyễn Thanh Toàn</h1>
+        <p class="tagline">Sinh viên trường Đại học Sư phạm kỹ thuật Thành phố Hồ Chí Minh</p>
+    </div>
+
+    <div class="section">
+        <h2>Giới thiệu bản thân</h2>
+        <p>Chào bạn! Tôi là một người đam mê công nghệ và thiết kế. Tôi thích giải quyết các vấn đề phức tạp thông qua mã nguồn và luôn tìm kiếm cơ hội để học hỏi những điều mới.</p>
+    </div>
+
+    <div class="section">
+        <h2>Kỹ năng</h2>
+        <ul class="skills-list">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Thiết kế UI/UX</li>
+            <li>Quản lý dự án</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Học vấn & Kinh nghiệm</h2>
+        <p><strong>Đại học Công nghệ thông tin</strong> (2020 - 2024)<br>Chuyên ngành: Kỹ thuật phần mềm</p>
+        <p><strong>Công ty ABC</strong> (2023 - Hiện tại)<br>Vị trí: Thực tập sinh Frontend</p>
+    </div>
+
+    <div class="section contact-info">
+        <h2>Liên hệ</h2>
+        <p>📧 Email: <a href="mailto:email@example.com">email@example.com</a></p>
+        <p>🌐 Website: <a href="#">www.trangwebcuatoi.com</a></p>
+        <p>📍 Địa chỉ: Hà Nội, Việt Nam</p>
+    </div>
+</div>
+
+</body>
+</html>
